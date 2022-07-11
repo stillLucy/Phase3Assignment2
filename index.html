@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Enrollment Form</title>
+  </head>
+  <body>
+    <section class="contact" id="contact">
+      <div id="error"></div>
+      <div class="overlay">
+        <div class="container">
+          <h1>Registration Form</h1>
+          <p>
+       Please complete this registratiob document to be considered for enrollment in our coding cohort.
+          </p>
+          <form id="form" action="" method="GET">
+            <h3>1. Basic Information</h3>
+            <input
+              id="name"
+              type="text"
+              name="Name"
+              placeholder="Name"
+              required
+            />
+            <h4>Gender</h4>
+            <input
+              id="genderm"
+              class="gender"
+              type="radio"
+              name="gender"
+              value="M"
+            /><label><h4>a. Male</h4></label>
+            <input
+              id="genderf"
+              class="gender"
+              type="radio"
+              name="gender"
+              value="F"
+            /><label><h4>b. Female</h4></label>
+            <input
+              id="gendero"
+              class="gender"
+              type="radio"
+              name="gender"
+              value="O"
+            /><label><h4>c. Other</h4></label>
+            <input
+              id="gendern"
+              class="gender"
+              type="radio"
+              name="gender"
+              value="N"
+            /><label><h4>d. Prefer not to respond</h4></label>
+            <input
+              id="email"
+              type="email"
+              name="Email"
+              placeholder="Email"
+              required
+            />
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <h3>2. Please Select One Preferred Programming Language</h3>
+            <input type="radio" name="language" class="language" value="java" />
+            <h4>a. Java</h4>
+            <input type="radio" name="language" class="language" value="js" />
+            <h4>b. JavaScript</h4>
+            <input type="radio" name="language" class="language" value="py" />
+            <h4>c. Python</h4>
+            <input type="radio" name="language" class="language" value="ts" />
+            <h4>d. TypeScript</h4>
+            <input type="radio" name="language" class="language" value="k" />
+            <h4>e. Kotlin</h4>
+            <input type="radio" name="language" class="language" value="c" />
+            <h4>f. C++</h4>
+            <br />
+            <h3>
+              3. Please briefly explain the reasons for choosing the above
+              programming langauge
+            </h3>
+            <textarea
+              name="Message"
+              placeholder="the best thing about your preferred language "
+              required
+            ></textarea>
+            <input type="submit" value="Submit" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
